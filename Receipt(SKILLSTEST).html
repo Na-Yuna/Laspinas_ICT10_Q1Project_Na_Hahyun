@@ -33,7 +33,7 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Navigation Bar */
+        /* Navigation */
         nav {
             background-color: #212529;
             height: 45px;
@@ -65,11 +65,13 @@
             color: #ff6b6b;
         }
 
+        /* Main container */
         .container {
             padding-top: 50px;
             padding-bottom: 50px;
         }
 
+        /* Main card */
         .main-card {
             border: none;
             border-radius: 20px;
@@ -79,7 +81,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
-
+        /* Header */
         .header {
             background: #212529;
             color: white;
@@ -87,36 +89,27 @@
             text-align: center;
         }
 
+        .header h1 {
+            margin-bottom: 5px;
+        }
 
+        /* Menu items */
         .info-card {
             border: none;
             border-radius: 15px;
-            transition: transform 0.2s;
             margin-bottom: 15px;
         }
 
-
         .info-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
         }
 
-
-        .info-title {
-            color: #de3f3f;
-            font-weight: bold;
+        /* Checkbox */
+        input[type="checkbox"] {
+            accent-color: #de3f3f;
         }
 
-
-        .data-value {
-            font-size: 1.1rem;
-        }
-
-
-        .badge-custom {
-            background-color: #de3f3f;
-        }
-
-
+        /* Order button */
         .order-button {
             background: linear-gradient(90deg, #de3f3f, #ac1923);
             border: none;
@@ -127,28 +120,22 @@
             margin-top: 10px;
         }
 
-
         .order-button:hover {
             opacity: 0.9;
         }
 
-
+        /* Receipt */
         #show {
             margin-top: 20px;
             padding: 15px;
             text-align: center;
         }
 
-
+        /* Footer */
         footer {
             text-align: center;
             color: white;
             margin-top: 30px;
-        }
-
-        input[type="checkbox"] {
-        /* This changes the color when the checkbox is clicked/checked */
-        accent-color: #de3f3f; 
         }
     </style>
 
@@ -179,7 +166,7 @@
             <div class="header">
                 <div><img src="bills.png" alt="Logo" width="60" style="background-color: #fffefe; padding: 5px; margin-bottom: 10px;" class="img-fluid rounded"></div>
                 <h1>The Human Market</h1>
-                <p class="mb-0">Choose • Assemble • Create</p>
+                <p class="mb-0">Organs • Tissues • Body Parts</p>
             </div>
 
             <!-- Menu -->
@@ -266,7 +253,7 @@
 
                 <!-- Create Order Button -->
                 <button class="order-button" py-click="create_order">
-                    ▣ &nbsp; Create Order
+                    Create Order
                 </button>
             
                 <!-- Line -->
@@ -283,7 +270,7 @@
         <!-- Footer -->
         <footer>
             <p>
-                &lt;/&gt; SKU Generator - 1st Quarter Project
+                &lt;/&gt; Receipt Generator - 1st Quarter Skills Test
             </p>
         </footer>
 
